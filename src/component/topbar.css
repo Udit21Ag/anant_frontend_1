@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-prop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.heading{
+    background-color: white;
+    color: rgb(2, 2, 84);
+    font-weight: 600;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/53ec3f51e4b0f5d3db27102b/1558633499762-AZKYM62GJLBHBOTHM76Z/intro-bg2.jpg?format=2500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.menu-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 100%;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.nav-elem{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.nav-elem-items{
+    position: relative;
+    padding: 18px 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.nav-elem-items:hover{
+    color: rgb(57, 131, 250);
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link-resp{
+    color: rgb(210, 210, 210);
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: rgb(57, 131, 250);
+}
+.nav-link-resp:hover{
+    color: rgb(57, 131, 250);
+}
+
+.nav-button{
+    align-content: center;
+}
+
+.contact-button{
+    background-color: transparent;
+    margin-left: 25px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    font-weight: 520;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contact-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.tagline{
+    padding: 140px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.tag1{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.tag2{
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-stretch: semi-expanded;
+    padding: 15px;
+}
+
+.dd{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(30, 30, 30);
+    width: max-content;
+    z-index: 1000;
+    max-height: 550px;
+}
+
+.dropdown{
+    height: auto;
+}
+
+.dropdown-item{
+    padding: 10px 20px;
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 500;
+    color: white;
+}
+
+.dropdown-item:hover{
+    color: rgb(57, 131, 250);
+}
+
+.nav-item-resp{
+    padding: 0 20px;
+    color: white;
+}
+
+.menu-resp{
+    width: 25%;
+    background-color: rgb(35, 35, 35);
+}
+
+.menu-items{
+    color: rgb(210, 210, 210);
+    position: relative;
+    font-weight: 600;
+}
+
+.submenu-items{
+    color: white;
+    position: relative;
+}
+
+.menu-items:hover{
+    color: rgb(57, 131, 250);
+}
+
+.nav-submenu{
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+}
+
+@media (min-width: 0px) {
+    .nav-elem{
+        display: none;
+    }
+    .nav-elem-resp{
+        display: inherit;
+    }
+}
+@media (min-width: 1225px){
+    .nav-elem{
+        display: inherit;
+    }
+    .nav-elem-resp{
+        display: none;
+    }
+    .menu-resp{
+        display: none;
+    }
+}
+
+@media (min-width: 0px){
+    .nav-buttons{
+        font-size: 12px;
+    }
+    .tag1{
+        font-size: 20px;
+    }
+    .tag2{
+        font-size: 18px;
+    }
+    .logo-img{
+        height: 50px;
+        width: 150px;
+    }
+    .nav-link-resp{
+        font-size: 5px;
+    }
+    .menu-items{
+        padding: 0px 0px 0px 10px;
+    }
+    .submenu-items{
+        padding: 0px 0px 0px 20px;
+    }
+}
+
+@media (min-width: 576px){
+    .nav-buttons{
+        font-size: 12px;
+    }
+    .logo-img{
+        height: 60px;
+        width: 180px;
+    }
+    .nav-link-resp{
+        font-size: 8px;
+    }
+    .menu-items{
+        padding: 10px 0px 0px 15px;
+    }
+    .submenu-items{
+        padding: 10px 0px 0px 30px;
+    }
+}
+@media (min-width: 768px){
+    .nav-buttons{
+        font-size: 14px;
+    }
+    .tag1{
+        font-size: 24px;
+    }
+    .tag2{
+        font-size: 32px;
+    }
+    .nav-link-resp{
+        font-size: 10px;
+    }
+    .menu-items{
+        padding: 10px 0px 0px 20px;
+    }
+    .submenu-items{
+        padding: 10px 0px 0px 40px;
+    }
+}
+@media (min-width: 992px){
+    .nav-buttons{
+        font-size: 1px;
+    }
+    .tag1{
+        font-size: 32px;
+    }
+    .tag2{
+        font-size: 76px;
+    }
+    .logo-img{
+        height: 80px;
+        width: 260px;
+    }
+    .nav-link-resp{
+        font-size: 12px;
+    }
+    .menu-items{
+        padding: 15px 0px 0px 20px;
+    }
+    .submenu-items{
+        padding: 15px 0px 0px 40px;
+    }
+}
+@media (min-width: 1200px){
+    .nav-buttons{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1400px){
+    .nav-buttons{
+        font-size: 18px;
+    }
+}

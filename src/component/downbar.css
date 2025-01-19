@@ -1,0 +1,62 @@
+.endbar{
+    justify-items: center;
+    width: 100%;
+}
+
+.social-box{
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.socials{
+    padding: 20px 25%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sc{
+    padding: 8px;
+    color: inherit;
+}
+
+.tw:hover{
+    color: black;
+}
+.ig:hover{
+    color: black;
+}
+.fb:hover{
+    color: black;
+}
+.yt:hover{
+    color: black;
+}
+
+.end-page{
+    padding: 100px 0 65px 0;
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+}
+
+@media (min-width: 0px){
+    .end-line{
+        color: rgb(125, 125, 125);
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    .end-line{
+        color: rgb(125, 125, 125);
+        font-size: 22px;
+        text-align: center;
+    }
+}
